@@ -9,7 +9,6 @@
   <name>UserMetrix-Log4jAppender</name>
   <url>http://usermetrix.com</url>
 
-  <!-- The location for publishing java library. -->
   <build>
     <plugins>
       <plugin>
@@ -55,6 +54,25 @@
           </execution>
         </executions>
       </plugin>
+
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.12</version>
+        <executions>
+          <execution>
+            <id>default-test</id>
+            <phase>test</phase>
+            <goals>
+              <goal>test</goal>
+            </goals>
+            <configuration>
+              <additionalClasspathElements>
+                <additionalClasspathElement>${basedir}/src/test/data</additionalClasspathElement>
+              </additionalClasspathElements>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 
@@ -95,6 +113,13 @@
 	  <groupId>log4j</groupId>
 	  <artifactId>log4j</artifactId>
 	  <version>1.2.16</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.7.0</version>
+      <scope>test</scope>
     </dependency>
 
     <dependency>

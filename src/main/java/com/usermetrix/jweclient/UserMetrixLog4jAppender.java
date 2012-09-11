@@ -1,6 +1,6 @@
 /*
  * UserMetrixLog4jAppender.java
- * UserMetrix-jweclient
+ * UserMetrix-Log4jAppender
  *
  * Copyright (c) 2012 UserMetrix Pty Ltd. All rights reserved.
  *
