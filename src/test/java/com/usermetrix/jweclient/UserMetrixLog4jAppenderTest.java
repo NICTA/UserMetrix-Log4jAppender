@@ -1,5 +1,5 @@
 /*
- * UserMetrixTest.java
+ * UserMetrixLog4jAppenderTest.java
  * UserMetrix-Log4jApppender
  *
  * Copyright (c) 2012 UserMetrix Pty Ltd. All rights reserved.
